@@ -17,11 +17,11 @@ var arcGenerator = {
 document.addEventListener('DOMContentLoaded', function () {
   chrome.tabs.query(
     {
-      active: true,               // Select active tabs
-      lastFocusedWindow: true 
+      'active': true,   
+      'windowId' : chrome.windows.WINDOW_ID_CURRENT
     }, 
-    function(array_of_tab){
-      var tab = array_of_tab[0];
+    function(tabs){
+      var tab = tabs[0];
       var url = tab.url;
       arcGenerator.genArc(url);
     });
