@@ -1,0 +1,14 @@
+{
+	"manifest_version" : 2,
+	"name" : "*arc, one click archiving",
+	"description" : "This extension allows a simple button press to archive webpages to archive.today, if the page is from twitter, tweetsave is used as well",
+	"version" : "1.0",
+	"permissions" : [
+		"http://*/*",
+		"https://*/*"
+	],
+	"browser_action" : {
+		"default_icon" : "icon.png",
+		"default_popup" : "popup.html"
+	}
+}
