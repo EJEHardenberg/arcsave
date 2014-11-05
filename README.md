@@ -8,6 +8,6 @@ Click the button to use the wonderful
 [archive.today](http://archive.today) site to keep your current tab
 FOREVER. 
 
-If you happen to be on a tweet on twitter, it wil send it to
+If you happen to be on a tweet on twitter, it will send it to
 [tweetsave](http://tweetsave.com/)
 as well!
