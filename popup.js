@@ -5,11 +5,13 @@
 
 var arcGenerator = {
   genArc: function(url) {
-    open('https://archive.today/?run=1&url='+encodeURIComponent(url))
     /* If on twitter also send to tweetsave */
     if(url.match(/twitter.com/)){
       open('http://tweetsave.com/?tweet='+encodeURIComponent(url))
     } 
+    open('https://archive.today/?run=1&url='+encodeURIComponent(url))
+    
+    
   },
 };
 
