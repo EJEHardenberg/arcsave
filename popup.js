@@ -7,9 +7,15 @@ var arcGenerator = {
   genArc: function(url) {
     /* If on twitter also send to tweetsave */
     if(url.match(/twitter.com/)){
-      open('http://tweetsave.com/?tweet='+encodeURIComponent(url))
+      setTimeout(function(){
+        open('http://tweetsave.com/?tweet='+encodeURIComponent(url))
+      },10)
+      
     } 
-    open('https://archive.today/?run=1&url='+encodeURIComponent(url))
+    setTimeout(function(){
+      open('https://archive.today/?run=1&url='+encodeURIComponent(url))  
+    },10)
+    
     
     
   },
