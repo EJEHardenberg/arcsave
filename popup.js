@@ -14,14 +14,10 @@ var arcGenerator = {
     } 
     setTimeout(function(){
       open('https://archive.today/?run=1&url='+encodeURIComponent(url))  
-    },10)
-    
-    
-    
+    },10)    
   },
 };
 
-// Run our kitten generation script as soon as the document's DOM is ready.
 document.addEventListener('DOMContentLoaded', function () {
   chrome.tabs.query(
     {
