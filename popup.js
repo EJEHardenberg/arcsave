@@ -6,7 +6,7 @@
 var arcGenerator = {
   genArc: function(url) {
     /* If on twitter also send to tweetsave */
-    if(url.match(/twitter.com/)){
+    if(url.match(/twitter.com\/[^/]+status/)){
       setTimeout(function(){
         open('http://tweetsave.com/?tweet='+encodeURIComponent(url))
       },10)
